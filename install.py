@@ -13,3 +13,11 @@ if __name__ == '__main__':
     else:
         shutil.copytree(os.path.join(dir_path, 'pyplanner'), os.path.join(bindings_dir, 'upf_pyplanner'))
         print('pyplanner installed successfully!')
+
+    # Install cppplanner
+    if os.path.exists(os.path.join(bindings_dir, 'upf_cppplanner')):
+        print('cppplanner already installed!')
+    else:
+        os.system('bash ' + os.path.join(dir_path, 'cpp_planner', 'compile.sh'))
+        shutil.copytree(os.path.join(dir_path, 'cpp_planner'), os.path.join(bindings_dir, 'upf_cppplanner'))
+        print('cppplanner installed successfully!')

@@ -1,0 +1,3 @@
+[submodule "cpp_planner/pybind11"]
+	path = cpp_planner/pybind11
+	url = https://github.com/pybind/pybind11.git
